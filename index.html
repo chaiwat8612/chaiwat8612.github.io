@@ -1,8 +1,124 @@
 <html>
 <head>
-    <title>...</title>
+    <style>
+        .smartbanner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 78px;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.smartbanner-container {
+    margin: 0 auto;
+}
+
+.smartbanner-close {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    display: block;
+    font-family: 'ArialRoundedMTBold',Arial;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 14px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    border: 0;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    color: #b1b1b3;
+    background: #efefef;
+}
+
+    .smartbanner-close:active, .smartbanner-close:hover {
+        color: #333;
+    }
+
+.smartbanner-icon {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    display: block;
+    width: 57px;
+    height: 57px;
+    background-color: #fff;
+    background-size: cover;
+    /*background-image: url("https://lh3.googleusercontent.com/yyEmckv5badLAHiu8y5rH1ieZNqxeuZOaWPZoj7o3yHujtNWffzZFLeXdOHJ3q2HrIA=w300-rw");*/
+    background-image: url("https://play-lh.googleusercontent.com/rEtSwQfupaS9gFlh4abotaos9GVoI3V8JzgEubPF92C4VytQvS4VPM5P7BLVwhH8WT-3=s180-rw");
+}
+
+.smartbanner-info {
+    position: absolute;
+    left: 98px;
+    top: 15px;
+    width: 46%;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: #999;
+}
+
+.smartbanner-title {
+    font-size: 15px;
+    line-height: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.smartbanner-button {
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    /*border-bottom: 3px solid #b3c833;*/
+    border-bottom: 3px solid #0d3e64;
+    padding: 0 10px;
+    min-width: 12%;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    /*background-color: #b3c833;*/
+    background-color: #0d3e64;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .smartbanner-button:hover {
+        /*background-color: #c1d739;
+        border-bottom: 3px solid #8c9c29;*/
+    }
+
+.smartbanner-button-text {
+    text-align: center;
+    display: block;
+    padding: 0 5px;
+    color: #fff;
+}
+
+    </style>
 </head>
 <body>
-    ...
+    <div class="smartbanner" id="smartabanner">
+        <div class="smartbanner-container">
+            <a href="#" id="smb-close" class="smartbanner-close">&times;</a>
+            <span class="smartbanner-icon"></span>
+            <div class="smartbanner-info">
+                <div class="smartbanner-title">UMay+ Mobile Application</div>
+                <div>สะดวกปลอดภัย ครบทุกฟังก์ชัน</div>                
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.aim.android.umay" target="_blank" class="smartbanner-button">
+                <span class="smartbanner-button-text">Open ></span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
