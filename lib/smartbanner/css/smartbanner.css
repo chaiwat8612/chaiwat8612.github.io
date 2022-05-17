@@ -1,8 +1,9 @@
 .smartbanner {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 100px;
+    left: 10px;
+    width: 98%;
+    height: 150px;
     font-family: "Helvetica Neue", helvetica, arial, sans-serif;
     background: #fff;
     overflow: hidden;
@@ -13,9 +14,10 @@
 
 .smartbanner2 {
     position: fixed;
-    bottom: 100;
-    width: 100%;
-    height: 100px;
+    bottom: 170;
+    left: 10px;
+    width: 98%;
+    height: 150px;
     font-family: "Helvetica Neue", helvetica, arial, sans-serif;
     background: #fff;
     overflow: hidden;
@@ -30,8 +32,8 @@
 
 .smartbanner-close {
     position: absolute;
-    left: 7px;
-    top: 7px;
+    left: 20px;
+    top: 30px;
     display: block;
     font-family: 'ArialRoundedMTBold', Arial;
     font-size: 15px;
@@ -66,8 +68,8 @@
 
 .smartbanner-icon-ig {
     position: absolute;
-    left: 30px;
-    top: 10px;
+    left: 50px;
+    top: 30px;
     display: block;
     width: 80px;
     height: 80px;
@@ -78,8 +80,8 @@
 
 .smartbanner-icon-umay {
     position: absolute;
-    left: 30px;
-    top: 10px;
+    left: 50px;
+    top: 30px;
     display: block;
     width: 80px;
     height: 80px;
@@ -90,8 +92,8 @@
 
 .smartbanner-info {
     position: absolute;
-    left: 120px;
-    top: 15px;
+    left: 150px;
+    top: 30px;
     width: 46%;
     font-size: 12px;
     line-height: 1.2em;
@@ -115,13 +117,13 @@
 
 .smartbanner-button {
     position: absolute;
-    right: 10px;
-    top: 24px;
+    right: 40px;
+    top: 35px;
     /*border-bottom: 3px solid #b3c833;*/
     border-bottom: 3px solid #0d3e64;
     padding: 0 10px;
-    min-width: 12%;
-    height: 24px;
+    min-width: 20%;
+    height: 60px;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -141,6 +143,7 @@
 .smartbanner-button-text {
     text-align: center;
     display: block;
-    padding: 0 5px;
+    padding-top: 20px;
     color: #fff;
+    font-size: 25px;
 }
