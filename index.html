@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <style>
         .smartbanner {
@@ -105,6 +106,19 @@
             color: #fff;
         }
     </style>
+
+    <script>
+        function hello() {
+            alert('hello');
+        }
+
+        function changetoinstagram() {
+            // Open Instagram
+            const url = "intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end";
+
+            window.location.replace(url);
+        }
+    </script>
 </head>
 
 <body>
@@ -116,8 +130,12 @@
                 <div class="smartbanner-title">UMay+ Mobile Application</div>
                 <div>สะดวกปลอดภัย ครบทุกฟังก์ชัน</div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.aim.android.umay" target="_blank"
+            <!-- <a href="https://play.google.com/store/apps/details?id=com.aim.android.umay" target="_blank"
                 class="smartbanner-button">
+                <span class="smartbanner-button-text">Open ></span>
+            </a> -->
+
+            <a href="#" target="_self" onclick="changetoinstagram()" class="smartbanner-button">
                 <span class="smartbanner-button-text">Open ></span>
             </a>
         </div>
