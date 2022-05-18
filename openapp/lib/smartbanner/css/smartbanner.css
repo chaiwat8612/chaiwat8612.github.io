@@ -1,0 +1,149 @@
+.smartbanner {
+    position: fixed;
+    bottom: 10;
+    left: 10px;
+    width: 98%;
+    height: 150px;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.smartbanner2 {
+    position: fixed;
+    bottom: 170;
+    left: 10px;
+    width: 98%;
+    height: 150px;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.smartbanner-container {
+    margin: 0 auto;
+}
+
+.smartbanner-close {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    display: block;
+    font-family: 'ArialRoundedMTBold', Arial;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 14px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    border: 0;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    color: #b1b1b3;
+    background: #efefef;
+}
+
+.smartbanner-close:active,
+.smartbanner-close:hover {
+    color: #333;
+}
+
+.smartbanner-icon {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    display: block;
+    width: 57px;
+    height: 57px;
+    background-color: #fff;
+    background-size: cover;
+    background-image: url("https://lh3.googleusercontent.com/yyEmckv5badLAHiu8y5rH1ieZNqxeuZOaWPZoj7o3yHujtNWffzZFLeXdOHJ3q2HrIA=w300-rw");          
+}
+
+.smartbanner-icon-ig {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    background-size: cover;            
+    background-image: url("https://play-lh.googleusercontent.com/h9jWMwqb-h9hjP4THqrJ50eIwPekjv7QPmTpA85gFQ10PjV02CoGAcYLLptqd19Sa1iJ=s180-rw");
+}
+
+.smartbanner-icon-umay {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    background-size: cover;            
+    background-image: url("https://play-lh.googleusercontent.com/rEtSwQfupaS9gFlh4abotaos9GVoI3V8JzgEubPF92C4VytQvS4VPM5P7BLVwhH8WT-3=s180-rw");
+}
+
+.smartbanner-info {
+    position: absolute;
+    left: 150px;
+    top: 30px;
+    width: 46%;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: #999;
+}
+
+.smartbanner-title {
+    font-size: 30px;
+    line-height: 50px;
+    color: #000;
+    font-weight: bold;
+}
+
+.smartbanner-title2 {
+    font-size: 25px;
+    line-height: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.smartbanner-button {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    /*border-bottom: 3px solid #b3c833;*/
+    border-bottom: 3px solid #0d3e64;
+    padding: 0 10px;
+    min-width: 20%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    /*background-color: #b3c833;*/
+    background-color: #0d3e64;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* .smartbanner-button:hover {
+    background-color: #c1d739;
+    border-bottom: 3px solid #8c9c29;
+} */
+
+.smartbanner-button-text {
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 25px;
+}
