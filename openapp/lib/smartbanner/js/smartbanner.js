@@ -2,7 +2,11 @@ function hello() {
     alert('hello');
 }
 
-function getDevice_() {
+function closeSmartBanner(objName){
+    document.getElementById(objName).style.display = "none";
+}
+
+function _getDevice() {
     var ua = navigator.userAgent.toUpperCase();
     var isAndroid = ua.indexOf("ANDROID") > -1;
     var isIPhone = ua.indexOf("IPHONE") > -1;
@@ -18,7 +22,7 @@ function getDevice_() {
 
 function changeToInstagram() {
 
-    var valOS = getDevice_();
+    var valOS = _getDevice();
 
     if (valOS == "ANDROID"){
         //FOR ANDROID
@@ -42,7 +46,7 @@ function changeToInstagram() {
 
 function changeToUmay() {
 
-    var valOS = getDevice_();
+    var valOS = _getDevice();
 
     if (valOS == "ANDROID"){
         //FOR ANDROID
