@@ -51,7 +51,8 @@ function changeToUmay() {
     if (valOS == "ANDROID"){
         //FOR ANDROID
         const url = "intent://umayplus.com/#Intent;scheme=https;package=com.aim.android.umay;end";
-        window.location.replace(url);
+        // window.location.replace(url);
+        window.location.replace("Umay+://");
 
     } else if(valOS == "IPHONE"){
         //FOR IPHONE
