@@ -49,8 +49,16 @@ function changeToInstagram() {
         // window.location = "instagram://";
 
         //new code
-        setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
-        window.location = "instagram://";
+        // setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
+        // window.location = "instagram://";
+
+        window.location.replace("instagram://");
+
+        setTimeout(() => {
+            window.location.replace(
+                "https://apps.apple.com/us/app/instagram/id389801252"
+            );
+        }, 3000);
 
     } else {
         //NOTHING TO DO
@@ -86,8 +94,16 @@ function changeToUmay() {
         // window.location = "umayplus://";
 
         //new code
-        setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
-        window.location = "umayplus://";
+        // setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
+        // window.location = "umayplus://";
+
+        window.location.replace("umayplus://");
+
+        setTimeout(() => {
+            window.location.replace(
+                "https://appsto.re/th/PXm64.i"
+            );
+        }, 3000);
 
     } else {
         //NOTHING TO DO
