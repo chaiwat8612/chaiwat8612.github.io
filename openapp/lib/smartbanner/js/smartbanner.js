@@ -2,7 +2,7 @@ function hello() {
     alert('hello');
 }
 
-function closeSmartBanner(objName){
+function closeSmartBanner(objName) {
     document.getElementById(objName).style.display = "none";
 }
 
@@ -13,7 +13,7 @@ function _getDevice() {
 
     if (isAndroid) {
         return "ANDROID";
-    } else if(isIPhone) {
+    } else if (isIPhone) {
         return "IPHONE";
     } else {
         return "OTHERS";
@@ -24,20 +24,20 @@ function changeToInstagram() {
 
     var valOS = _getDevice();
 
-    if (valOS == "ANDROID"){
+    if (valOS == "ANDROID") {
         //FOR ANDROID
         const url = "intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end";
         window.location.replace(url);
 
-    } else if(valOS == "IPHONE"){
+    } else if (valOS == "IPHONE") {
         //FOR IPHONE
         window.location.replace("instagram://");
 
-      setTimeout(() => {
-        window.location.replace(
-          "https://apps.apple.com/us/app/instagram/id389801252"
-        );
-      }, 10000);
+        setTimeout(() => {
+            window.location.replace(
+                "https://apps.apple.com/us/app/instagram/id389801252"
+            );
+        }, 10000);
 
     } else {
         //NOTHING TO DO
@@ -48,20 +48,20 @@ function changeToUmay() {
 
     var valOS = _getDevice();
 
-    if (valOS == "ANDROID"){
+    if (valOS == "ANDROID") {
         //FOR ANDROID
         const url = "intent://umayplus.com/#Intent;scheme=https;package=com.aim.android.umay;end";
         window.location.replace(url);
 
-    } else if(valOS == "IPHONE"){
+    } else if (valOS == "IPHONE") {
         //FOR IPHONE
         window.location.replace("umayplus://");
 
-      setTimeout(() => {
-        window.location.replace(
-          "https://appsto.re/th/PXm64.i"
-        );
-      }, 10000);
+        setTimeout(() => {
+            window.location.replace(
+                "https://appsto.re/th/PXm64.i"
+            );
+        }, 10000);
 
     } else {
         //NOTHING TO DO
