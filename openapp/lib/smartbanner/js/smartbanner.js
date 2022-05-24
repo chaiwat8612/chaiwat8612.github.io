@@ -6,7 +6,7 @@ function closeSmartBanner(objName) {
     document.getElementById(objName).style.display = "none";
 }
 
-function _getDevice() {
+function _detectOS() {
     var ua = navigator.userAgent.toUpperCase();
     var isAndroid = ua.indexOf("ANDROID") > -1;
     var isIPhone = ua.indexOf("IPHONE") > -1;
@@ -22,7 +22,7 @@ function _getDevice() {
 
 function changeToInstagram() {
 
-    var valOS = _getDevice();
+    var valOS = _detectOS();
 
     if (valOS == "ANDROID") {
         //FOR ANDROID
@@ -40,22 +40,26 @@ function changeToInstagram() {
         //     );
         // }, 10000);
 
+        //old code 2
+        // var now = new Date().valueOf();
+        // setTimeout(function () {
+        //     if (new Date().valueOf() - now > 100) return;
+        //     window.location = "https://apps.apple.com/us/app/instagram/id389801252";
+        // }, 25);
+        // window.location = "instagram://";
+
         //new code
-        var now = new Date().valueOf();
-        setTimeout(function () {
-            if (new Date().valueOf() - now > 100) return;
-            window.location = "https://apps.apple.com/us/app/instagram/id389801252";
-        }, 25);
+        setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
         window.location = "instagram://";
 
     } else {
         //NOTHING TO DO
-    }
+    }    
 }
 
 function changeToUmay() {
 
-    var valOS = _getDevice();
+    var valOS = _detectOS();
 
     if (valOS == "ANDROID") {
         //FOR ANDROID
@@ -73,12 +77,16 @@ function changeToUmay() {
         //     );
         // }, 10000);
 
+        //old code 2
+        // var now = new Date().valueOf();
+        // setTimeout(function () {
+        //     if (new Date().valueOf() - now > 100) return;
+        //     window.location = "https://appsto.re/th/PXm64.i";
+        // }, 25);
+        // window.location = "umayplus://";
+
         //new code
-        var now = new Date().valueOf();
-        setTimeout(function () {
-            if (new Date().valueOf() - now > 100) return;
-            window.location = "https://appsto.re/th/PXm64.i";
-        }, 25);
+        setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
         window.location = "umayplus://";
 
     } else {
