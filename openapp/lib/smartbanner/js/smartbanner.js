@@ -31,13 +31,22 @@ function changeToInstagram() {
 
     } else if (valOS == "IPHONE") {
         //FOR IPHONE
-        window.location.replace("instagram://");
+        //old code
+        // window.location.replace("instagram://");
 
-        setTimeout(() => {
-            window.location.replace(
-                "https://apps.apple.com/us/app/instagram/id389801252"
-            );
-        }, 10000);
+        // setTimeout(() => {
+        //     window.location.replace(
+        //         "https://apps.apple.com/us/app/instagram/id389801252"
+        //     );
+        // }, 10000);
+
+        //new code
+        var now = new Date().valueOf();
+        setTimeout(function () {
+            if (new Date().valueOf() - now > 100) return;
+            window.location = "https://apps.apple.com/us/app/instagram/id389801252";
+        }, 25);
+        window.location = "instagram://";
 
     } else {
         //NOTHING TO DO
@@ -55,13 +64,22 @@ function changeToUmay() {
 
     } else if (valOS == "IPHONE") {
         //FOR IPHONE
-        window.location.replace("umayplus://");
+        //old code
+        // window.location.replace("umayplus://");
 
-        setTimeout(() => {
-            window.location.replace(
-                "https://appsto.re/th/PXm64.i"
-            );
-        }, 10000);
+        // setTimeout(() => {
+        //     window.location.replace(
+        //         "https://appsto.re/th/PXm64.i"
+        //     );
+        // }, 10000);
+
+        //new code
+        var now = new Date().valueOf();
+        setTimeout(function () {
+            if (new Date().valueOf() - now > 100) return;
+            window.location = "https://appsto.re/th/PXm64.i";
+        }, 25);
+        window.location = "umayplus://";
 
     } else {
         //NOTHING TO DO
