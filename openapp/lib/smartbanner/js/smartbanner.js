@@ -41,28 +41,28 @@ function changeToInstagram() {
         // }, 10000);
 
         //old code 2
-        // var now = new Date().valueOf();
-        // setTimeout(function () {
-        //     if (new Date().valueOf() - now > 100) return;
-        //     window.location = "https://apps.apple.com/us/app/instagram/id389801252";
-        // }, 25);
-        // window.location = "instagram://";
+        var now = new Date().valueOf();
+        setTimeout(function () {
+            if (new Date().valueOf() - now > 100) return;
+            window.location = "https://apps.apple.com/us/app/instagram/id389801252";
+        }, 25);
+        window.location = "instagram://";
 
         //new code
         // setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
         // window.location = "instagram://";
 
-        window.location.replace("instagram://");
+        // window.location.replace("instagram://");
 
-        setTimeout(() => {
-            window.location.replace(
-                "https://apps.apple.com/us/app/instagram/id389801252"
-            );
-        }, 3000);
+        // setTimeout(() => {
+        //     window.location.replace(
+        //         "https://apps.apple.com/us/app/instagram/id389801252"
+        //     );
+        // }, 3000);
 
     } else {
         //NOTHING TO DO
-    }    
+    }
 }
 
 function changeToUmay() {
@@ -86,24 +86,24 @@ function changeToUmay() {
         // }, 10000);
 
         //old code 2
-        // var now = new Date().valueOf();
-        // setTimeout(function () {
-        //     if (new Date().valueOf() - now > 100) return;
-        //     window.location = "https://appsto.re/th/PXm64.i";
-        // }, 25);
-        // window.location = "umayplus://";
+        var now = new Date().valueOf();
+        setTimeout(function () {
+            if (new Date().valueOf() - now > 100) return;
+            window.location = "https://appsto.re/th/PXm64.i";
+        }, 25);
+        window.location = "umayplus://";
 
         //new code
         // setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
         // window.location = "umayplus://";
 
-        window.location.replace("umayplus://");
+        // window.location.replace("umayplus://");
 
-        setTimeout(() => {
-            window.location.replace(
-                "https://appsto.re/th/PXm64.i"
-            );
-        }, 3000);
+        // setTimeout(() => {
+        //     window.location.replace(
+        //         "https://appsto.re/th/PXm64.i"
+        //     );
+        // }, 3000);
 
     } else {
         //NOTHING TO DO
