@@ -10,6 +10,11 @@ function getStat() {
 
     var objUa = document.getElementById("uaResult");
     objUa.innerHTML = uaVal;
+
+    var osVal = _detectOS();
+
+    var objOS = document.getElementById("osResult");
+    objOS.innerHTML = "Device: " + osVal;
 }
 
 function closeSmartBanner(objName) {
@@ -25,6 +30,7 @@ function _detectOS() {
     var isAndroid = ua.indexOf("ANDROID") > -1;
     var isIPhone = ua.indexOf("IPHONE") > -1;
     var isIPad = ua.indexOf("IPAD") > -1;
+    var isMacintosh = ua.indexOf("MACINTOSH") > -1;
 
     //send back OS value
     if (isAndroid) {
@@ -32,6 +38,8 @@ function _detectOS() {
     } else if (isIPhone) {
         return "IPHONE";
     } else if (isIPad) {
+        return "IPAD";
+    } else if (isMacintosh) {
         return "IPAD";
     } else {
         return "OTHERS";
