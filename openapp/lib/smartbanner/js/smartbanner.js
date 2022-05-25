@@ -2,6 +2,16 @@ function hello() {
     alert('hello');
 }
 
+function getStat() {
+    var objJs = document.getElementById("jsResult");
+    objJs.innerHTML = "JavaScript can run";
+
+    var uaVal = navigator.userAgent.toUpperCase();
+
+    var objUa = document.getElementById("uaResult");
+    objUa.innerHTML = uaVal;
+}
+
 function closeSmartBanner(objName) {
     document.getElementById(objName).style.display = "none";
 }
