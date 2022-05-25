@@ -7,14 +7,22 @@ function closeSmartBanner(objName) {
 }
 
 function _detectOS() {
+
+    //get userAgent
     var ua = navigator.userAgent.toUpperCase();
+
+    //find OS
     var isAndroid = ua.indexOf("ANDROID") > -1;
     var isIPhone = ua.indexOf("IPHONE") > -1;
+    var isIPad = ua.indexOf("IPAD") > -1;
 
+    //send back OS value
     if (isAndroid) {
         return "ANDROID";
     } else if (isIPhone) {
         return "IPHONE";
+    } else if (isIPad) {
+        return "IPAD";
     } else {
         return "OTHERS";
     }
@@ -22,43 +30,28 @@ function _detectOS() {
 
 function changeToInstagram() {
 
+    //get OS value
     var valOS = _detectOS();
 
+    //action value
+    var androidIntent = "intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end";
+    var iOSPackage = "https://apps.apple.com/us/app/instagram/id389801252";
+    var iOSCommand = "instagram://";
+
     if (valOS == "ANDROID") {
+
         //FOR ANDROID
-        const url = "intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end";
-        window.location.replace(url);
+        window.location.replace(androidIntent);
 
-    } else if (valOS == "IPHONE") {
-        //FOR IPHONE
-        //old code
-        // window.location.replace("instagram://");
+    } else if ((valOS == "IPHONE") || (valOS == "IPAD")) {
 
-        // setTimeout(() => {
-        //     window.location.replace(
-        //         "https://apps.apple.com/us/app/instagram/id389801252"
-        //     );
-        // }, 10000);
-
-        //old code 2
+        //FOR IPHONE AND IPAD
         var now = new Date().valueOf();
         setTimeout(function () {
             if (new Date().valueOf() - now > 100) return;
-            window.location = "https://apps.apple.com/us/app/instagram/id389801252";
+            window.location = iOSPackage;
         }, 25);
-        window.location = "instagram://";
-
-        //new code
-        // setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
-        // window.location = "instagram://";
-
-        // window.location.replace("instagram://");
-
-        // setTimeout(() => {
-        //     window.location.replace(
-        //         "https://apps.apple.com/us/app/instagram/id389801252"
-        //     );
-        // }, 3000);
+        window.location = iOSCommand;
 
     } else {
         //NOTHING TO DO
@@ -67,43 +60,28 @@ function changeToInstagram() {
 
 function changeToUmay() {
 
+    //get OS value
     var valOS = _detectOS();
 
+    //action value
+    var androidIntent = "intent://umayplus.com/#Intent;scheme=https;package=com.aim.android.umay;end";
+    var iOSPackage = "https://appsto.re/th/PXm64.i";
+    var iOSCommand = "umayplus://";
+
     if (valOS == "ANDROID") {
+
         //FOR ANDROID
-        const url = "intent://umayplus.com/#Intent;scheme=https;package=com.aim.android.umay;end";
-        window.location.replace(url);
+        window.location.replace(androidIntent);
 
-    } else if (valOS == "IPHONE") {
-        //FOR IPHONE
-        //old code
-        // window.location.replace("umayplus://");
+    } else if ((valOS == "IPHONE") || (valOS == "IPAD")) {
 
-        // setTimeout(() => {
-        //     window.location.replace(
-        //         "https://appsto.re/th/PXm64.i"
-        //     );
-        // }, 10000);
-
-        //old code 2
+        //FOR IPHONE AND IPAD
         var now = new Date().valueOf();
         setTimeout(function () {
             if (new Date().valueOf() - now > 100) return;
-            window.location = "https://appsto.re/th/PXm64.i";
+            window.location = iOSPackage;
         }, 25);
-        window.location = "umayplus://";
-
-        //new code
-        // setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
-        // window.location = "umayplus://";
-
-        // window.location.replace("umayplus://");
-
-        // setTimeout(() => {
-        //     window.location.replace(
-        //         "https://appsto.re/th/PXm64.i"
-        //     );
-        // }, 3000);
+        window.location = iOSCommand;
 
     } else {
         //NOTHING TO DO
