@@ -4,30 +4,30 @@ function hello() {
 
 function getStat() {
 
-    window.addEventListener('hashchange', function() {
+    window.addEventListener('hashchange', function () {
         // this.alert("123");
         // history.pushState({},"URL Rewrite Example","https://stackoverflow.com/example")
         // this.alert('finish command');
     })
 }
 
-function clearLog(){
+function clearLog() {
     var objLog = document.getElementById("logWeb");
     objLog.innerHTML = "Log";
 }
 
-function writeLog(newLog){
+function writeLog(newLog) {
     var objLog = document.getElementById("logWeb");
     var tmpLog = objLog.innerHTML + "<p style='margin: 0px'>" + newLog + "</p>";
     objLog.innerHTML = tmpLog;
 }
 
-function clearException(){
+function clearException() {
     var objExcep = document.getElementById("logExcep");
     objExcep.innerHTML = "Exception<br>";
 }
 
-function writeException(excepLog){
+function writeException(excepLog) {
     var objExcep = document.getElementById("logExcep");
     var tmpLog = objExcep.innerHTML + "<p style='margin: 0px'>" + excepLog + "</p>";
     objExcep.innerHTML = tmpLog;
@@ -86,7 +86,7 @@ function changeToInstagram() {
 
             writeLog("4.Website try to open Instagram");
 
-            try{
+            try {
                 var now = new Date().valueOf();
                 setTimeout(function () {
                     if (new Date().valueOf() - now > 100) return;
@@ -94,10 +94,10 @@ function changeToInstagram() {
                 }, 25);
                 window.location = iOSCommand;
             }
-            catch(ex){
+            catch (ex) {
                 console.log(ex.message);
                 writeException(ex.message);
-            }            
+            }
 
         } else {
 
@@ -106,15 +106,21 @@ function changeToInstagram() {
 
             writeLog("4.Website try to open Instagram");
 
-            try{
+            try {
 
-                setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
-                window.location = "instagram://";
+                // setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
+                // window.location = "instagram://";
 
-            }catch(ex){
+                window.location.replace("instagram://");
+
+                setTimeout(() => {
+                    window.location.replace("https://apps.apple.com/us/app/instagram/id389801252");
+                }, 10000);
+
+            } catch (ex) {
                 console.log(ex.message);
                 writeException(ex.message);
-            }            
+            }
         }
 
     } else {
@@ -171,7 +177,7 @@ function changeToUmay() {
 
             writeLog("4.Website try to open Umayplus");
 
-            try{
+            try {
                 var now = new Date().valueOf();
                 setTimeout(function () {
                     if (new Date().valueOf() - now > 100) return;
@@ -179,10 +185,10 @@ function changeToUmay() {
                 }, 25);
                 window.location = iOSCommand;
             }
-            catch(ex){
+            catch (ex) {
                 console.log(ex.message);
                 writeException(ex.message);
-            }            
+            }
 
         } else {
 
@@ -191,15 +197,21 @@ function changeToUmay() {
 
             writeLog("4.Website try to open Umayplus");
 
-            try{
+            try {
 
-                setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
-                window.location = "umayplus://";
+                // setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
+                // window.location = "umayplus://";
 
-            }catch(ex){
+                window.location.replace("umayplus://");
+
+                setTimeout(() => {
+                    window.location.replace("https://appsto.re/th/PXm64.i");
+                }, 10000);
+
+            } catch (ex) {
                 console.log(ex.message);
                 writeException(ex.message);
-            }            
+            }
         }
 
     } else {
