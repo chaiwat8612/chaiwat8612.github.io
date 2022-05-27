@@ -1,20 +1,19 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./lib/smartbanner/css/smartbanner.css?ver=0014">
-    <script src="./lib/smartbanner/js/smartbanner.js?ver=0014" type="text/javascript"></script>
+    <link rel="stylesheet" href="./lib/smartbanner/css/smartbanner.css?ver=0013">
+    <script src="./lib/smartbanner/js/smartbanner.js?ver=0013" type="text/javascript"></script>
 </head>
 
 <body style="background: #094baf;" onload="getStat()">
-
-    <div style="background: #eff0f3; height: 350; width: auto">
+    
+    <div style="background: #eff0f3; height: 700; width: auto">
         <br>
-        <div id="logWeb" style="font-size: 35px; word-wrap: break-word;">Log:</div>
-    </div> 
-
-    <div style="background: #eff0f3; height: 350; width: auto">
-        <br>
-        <div id="logExcep" style="font-size: 35px; word-wrap: break-word;">Exception:</div>
-    </div> 
+        <div style="font-size: 50px; font-weight: bold">STAT:</div><br>
+        <div id="jsResult" style="font-size: 50px">JavaScript not run.</div><br>
+        <div id="uaHeader" style="font-size: 50px">UserAgent:</div>
+        <div id="uaResult" style="font-size: 50px; word-wrap: break-word;">undefined</div><br>
+        <div id="osResult" style="font-size: 50px">Device: undefined</div>
+    </div>
     
     <div class="smartbanner" id="smartbanner">
         <div class="smartbanner-container">
