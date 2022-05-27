@@ -2,10 +2,12 @@ function hello() {
     alert('hello');
 }
 
-function getStat() {   
+function getStat() {
 
-    window.addEventListener('hashchange', function () {
-        console.log('onhashchange event occurred!');
+    window.addEventListener('hashchange', function() {
+        // this.alert("123");
+        // history.pushState({},"URL Rewrite Example","https://stackoverflow.com/example")
+        // this.alert('finish command');
     })
 }
 
@@ -106,10 +108,8 @@ function changeToInstagram() {
 
             try{
 
-                window.location = iOSCommand;
-                setTimeout(function () {
-                    window.location = iOSPackage
-                }, 250);
+                setTimeout(function () { window.location = "https://apps.apple.com/us/app/instagram/id389801252"; }, 25);
+                window.location = "instagram://";
 
             }catch(ex){
                 console.log(ex.message);
@@ -193,10 +193,8 @@ function changeToUmay() {
 
             try{
 
-                window.location = iOSCommand;
-                setTimeout(function () {
-                    window.location = iOSPackage
-                }, 250);
+                setTimeout(function () { window.location = "https://appsto.re/th/PXm64.i"; }, 25);
+                window.location = "umayplus://";
 
             }catch(ex){
                 console.log(ex.message);
